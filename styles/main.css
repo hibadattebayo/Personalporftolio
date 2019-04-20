@@ -1,0 +1,277 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: roboto;
+  background-color: #505466;
+}
+
+.pros{
+	display:block;
+	height: 300px;
+	background-color: rgba(0, 0, 0, 0.28);
+}
+
+@media screen and (min-width: 0px) {
+.grid-container{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-areas:"nav"
+						"header"
+						"introduction"
+						"work"
+						"linkedin"
+						"instagram"
+						"youtube"
+}
+
+nav{
+  grid-area: nav;
+  font-family: abril fatface;
+  font-size: 18px;
+  padding: 0;
+}
+
+.header{
+	grid-area: header;
+	/*height: 480px;*/
+	color: #FCD68E;
+	font-family: abril fatface;
+	font-size: 48px;
+	padding-top: 10%;
+    padding-left: 5%;
+    padding-bottom: 10%;
+}
+
+.introduction{
+	grid-area: introduction;
+	background-color: #C3B4FF;
+	padding-top: 5%;
+	padding-bottom: 5%;
+    padding-left: 5%;
+	color: #505466;
+}
+
+.work{
+	grid-area: work;
+}
+
+.linkedin{
+	grid-area: linkedin;
+	background-color: #C3B4FF;
+	height: 55px;
+}
+
+.instagram{
+	grid-area: instagram;
+	background-color: #9C94CB;
+	height: 55px;
+}
+
+.youtube{
+	grid-area: youtube;
+	background-color: #C3B4FF;
+	height: 55px;
+}
+
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 246, 161, 0.95);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #505466;
+  /*display: block;*/
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.work{
+	color: #FFF6A1;
+	padding-top: 5%;
+	padding-bottom: 5%;
+    padding-left: 5%;
+}
+
+.overlay .closebtn {
+  position: relative;
+  font-size: 60px;
+}
+
+
+@media screen and (min-height: 360px) {
+  .overlay .closebtn{
+  font-size: 40px;
+  display: flex;
+  justify-content: flex-end;
+   width: 92%;
+   height: 5%;
+}
+
+h3{
+	font-family: roboto;
+	font-size: 12px;
+}
+
+.grid-item{
+	padding-right: 15%;
+}
+
+h1{
+	font-family: abril fatface;
+	font-size: 14px;
+}
+
+p{
+	font-size: 18px;
+}
+
+.fa-bars{
+  color: #FFF6A1;
+}
+
+.main-nav {
+  list-style-type: none;
+  display: /*none*/ inline;
+}
+
+.nav-links,
+.logo {
+  text-decoration: none;
+  color: #FFF6A1;
+  font-family: abril fatface;
+}
+
+.main-nav li {
+  text-align: center;
+  margin: 15px auto;
+}
+
+.logo {
+  display: inline-block;
+  font-size: 22px;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.navbar-toggle {
+  position: fixed;
+  top: 10px;
+  right: 20px;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 24px;
+}
+
+.active {
+  display: inline;
+}
+}
+
+@media screen and (min-width: 768px) {
+.fa-bars{
+	font-size: 40px;
+}
+}
+
+
+@media screen and (min-width: 1024px) {
+/*a{
+		display: block;
+}*/
+
+  .navbar-toggle {
+    display: none;
+ }
+
+ul{
+	 width: 10%;
+ }
+ 
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #FFF6A1;
+  /*display: block;*/
+  transition: 0.3s;
+}
+
+ .main-nav {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-end;
+	margin: 0;
+  }
+
+  /*LIST ITEMSSSSSSSSSSS*/
+ .main-nav li {
+    margin: 0;
+	position: fixed;
+	top: 0;
+	left: 0;
+	color: #FCD68E;
+    width: 100%;
+  }
+
+.nav-links{
+     /*margin-left: 40px;
+	 height: auto;
+	 width: 30%;*/
+  }
+
+  .active{
+	text-decoration: line-through;
+  }
+
+  .logo {
+    margin-top: 0;
+	position: fixed;
+  }
+
+.logo:hover,
+  .nav-links:hover {
+    color: rgba(255, 255, 255, 1);
+  }
+  
+ .header{
+	 padding-top: 15%;
+	 padding-bottom: 15%;
+	 padding-left: 15%;
+ }
+ 
+ .work{
+	padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 13%;
+}
+
+.introduction{
+	padding-left: 13%;
+}
+ }
+ 
+}
