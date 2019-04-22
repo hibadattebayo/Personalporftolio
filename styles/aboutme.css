@@ -28,9 +28,8 @@ i{
 }
 
 .text_aboutme{
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
+	padding-left: 5%;
+    padding-bottom: 10%;
 }
 
 .linkaboutme{
@@ -38,4 +37,24 @@ i{
 	font-family: abril fatface;
 	color: #505466;
 	text-decoration: none;
+}
+
+@media screen and (min-width: 1024px){
+.grid-container{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-areas:"nav nav nav"
+						"header header header"
+						"aboutme aboutme aboutme"
+						"linkedin instagram youtube"
+}
+
+.header{
+	grid-area: header;
+}
+
+.text_aboutme{
+	grid-area: aboutme;
+}
+
 }
