@@ -12,15 +12,31 @@ document.getElementsByClassName('closebtn')[0].onclick = function () {
 	document.getElementsByClassName('fa-bars')[0].style.display = "inline";
 }
 
-document.getElementsByClassName('nav-links')[0].onclick = function () {
-	nav.style.width = "0%";
-	document.getElementsByClassName('fa-bars')[0].style.display = "inline";
-}
 
 document.getElementsByClassName('fa-bars')[0].onclick = function () {
 	nav.style.width = "100%";
 	mainNav.classList.add("active");
 	document.getElementsByClassName('fa-bars')[0].style.display = "none";
+}
+
+document.getElementsByClassName('nav-links')[0].onclick = function () {
+	nav.style.width = "0%";
+	document.getElementsByClassName('fa-bars')[0].style.display = "inline";
+}
+
+document.getElementsByClassName('nav-links')[1].onclick = function () {
+	nav.style.width = "0%";
+	document.getElementsByClassName('fa-bars')[0].style.display = "inline";
+}
+
+document.getElementsByClassName('nav-links')[2].onclick = function () {
+	nav.style.width = "0%";
+	document.getElementsByClassName('fa-bars')[0].style.display = "inline";
+}
+
+document.getElementsByClassName('nav-links')[3].onclick = function () {
+	nav.style.width = "0%";
+	document.getElementsByClassName('fa-bars')[0].style.display = "inline";
 }
 
 /*document.getElementsByClassName('nav-links')[0].onclick = function(){

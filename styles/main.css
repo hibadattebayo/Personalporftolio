@@ -34,6 +34,10 @@ nav{
   padding: 0;
 }
 
+.aboutmebutton{
+	display: none;
+}
+
 .header{
 	grid-area: header;
 	/*height: 480px;*/
@@ -149,6 +153,19 @@ p{
 	font-size: 18px;
 }
 
+.instagram, .linkedin, .youtube{
+	display: flex;
+	justify-content: center;
+	align-items:center;
+	padding: 0;
+}
+
+i{
+	color: #505466;
+	font-size: 35px;
+	display: block;
+}
+
 .fa-bars{
   color: #FFF6A1;
 }
@@ -166,8 +183,8 @@ p{
 }
 
 .main-nav li {
-  text-align: center;
-  margin: 15px auto;
+  /*text-align: center;*/
+ margin: 15px auto;
 }
 
 .logo {
@@ -199,6 +216,46 @@ p{
 
 
 @media screen and (min-width: 1024px) {
+.grid-container{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-areas:"nav nav nav"
+						"header header header"
+						"introduction introduction introduction "
+						"work work work"
+						"linkedin instagram youtube"
+}
+
+.header{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.aboutmebutton{
+	width: 300px;
+	height: 44px;
+	background: #FCD68E;
+	border-radius: 40px;
+	margin-top: 3%;
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.aboutmelink{
+	text-decoration: none;
+}
+
+.buttontext{
+	color: #505466;
+	font-size: 20px;
+	text-decoration: none;
+}
+
 /*a{
 		display: block;
 }*/
@@ -209,6 +266,16 @@ p{
 
 ul{
 	 width: 10%;
+	 
+	 position: fixed; /* Set the navbar to fixed position */
+    top: 0; 
+	display:flex;
+	flex-flow: row;
+	width:100%;
+	padding:0;
+	z-index: 10;
+	align-items:center;
+	justify-content:center;
  }
  
 .overlay a {
@@ -221,10 +288,8 @@ ul{
 }
 
  .main-nav {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: flex-end;
 	margin: 0;
+	display:block;
   }
 
   /*LIST ITEMSSSSSSSSSSS*/
@@ -243,11 +308,11 @@ ul{
 	 width: 30%;*/
   }
 
-  .active{
+ /*.active{
 	text-decoration: line-through;
-  }
+  }*/
 
-  .logo {
+.logo {
     margin-top: 0;
 	position: fixed;
   }
@@ -255,6 +320,10 @@ ul{
 .logo:hover,
   .nav-links:hover {
     color: rgba(255, 255, 255, 1);
+  }
+  
+.nav-links:active {
+    text-decoration: line-through;
   }
   
  .header{

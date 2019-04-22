@@ -1,0 +1,35 @@
+body {
+  font-family: roboto;
+  background-color: #C3B4FF;
+}
+
+.header{
+	color: #505466;
+}
+
+.overlay a, .logo, .fa-bars{
+	color: #505466;
+}
+
+i{
+	color: #C3B4FF;
+}
+
+.linkedin{
+	background-color: #505466;
+}
+
+.instagram{
+	background-color: #5C5E75;
+}
+
+.youtube{
+	background-color: #505466;
+}
+
+.text_aboutme{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
