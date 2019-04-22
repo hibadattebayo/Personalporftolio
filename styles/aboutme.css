@@ -31,5 +31,11 @@ i{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	align-items: center;
+}
+
+.linkaboutme{
+	font-size: 20px;
+	font-family: abril fatface;
+	color: #505466;
+	text-decoration: none;
 }
